@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
+import NewExpense from './components/NewExpense/NewExpense'
 import Expenses from './components/Expenses/Expenses'
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <NewExpense/>
         <Expenses
           items={expensesData}
         />
