@@ -26,6 +26,14 @@ const App = () => {
       date: new Date(2022, 5, 12),
     },
   ]
+
+  const addExpenseHnadler = (expenseData) =>{
+    console.log('On App.js')
+    console.log(expenseData)
+  }
+  
+
+
   // return React.createElement (
   //   'div',
   //   {className:"App"},
@@ -36,7 +44,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <NewExpense/>
+        <NewExpense onAddExpense = {addExpenseHnadler}/>
         <Expenses
           items={expensesData}
         />
